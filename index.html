@@ -1,0 +1,153 @@
+
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+<div class="dark-mode-toggle">
+    <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider round"></span>
+    </label>
+    <span class="toggle-label">Dark Mode</span>
+</div>
+    <header>
+        <h1>Gizmo Gazette</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+      
+<section id="home" class="content-section home-section">
+    <div class="home-content">
+        <h2>Welcome to My Blog</h2>
+        <p>Explore the latest updates and featured content.</p>
+    </div>
+</section>
+
+
+<section id="about" class="content-section">
+    <div class="about-content">
+        <div class="about-image">
+            <img src="https://media.licdn.com/dms/image/C4D03AQH_oShtU9haTQ/profile-displayphoto-shrink_800_800/0/1653383352642?e=2147483647&v=beta&t=1jOkRlM-yxSbNtHG78Fd8IoetGQ71BtA2SP3NodzgN4" alt="Spandan Kumar">
+        </div>
+        <div class="about-text">
+            <h2>The Author</h2>
+            <p>
+                Spandan Kumar is a developer with a strong eye for innovative design and a keen understanding of techniques geared toward optimum user experience. He is a Computer Science student who is passionate about design and development.
+            </p>
+        </div>
+    </div>
+</section>
+        
+     
+        <section id="blog">
+            <section class="post">
+                <h2>Creating a Weather App with Python and Tkinter: A Simple Guide</h2>
+                <p>Published on <span class="date">June 17, 2023</span> by <span class="author">Spandan Kumar</span></p>
+                <p class="content">
+                   <br><p>In this guide, we'll walk you through the creation of a Weather App using Python and Tkinter, providing a practical example of how to access and display live weather data in a user-friendly interface.</p>
+                    <span class="full-content">
+                      
+
+<p>In today's digital age, having access to real-time weather information is essential. Whether you're planning a trip or just stepping out for a walk, knowing the current weather conditions can be invaluable. In this guide, we'll walk you through the creation of a Weather App using Python and Tkinter, providing a practical example of how to access and display live weather data in a user-friendly interface.</p>
+
+<br>Tools and Libraries:<br>
+
+<p>To begin, you'll need Python, a versatile programming language, and Tkinter, a standard GUI library for creating desktop applications. We'll also use the OpenWeatherMap API to fetch weather data. Make sure you have these tools installed before you start.</p>
+
+<br>Fetching Weather Data:<br>
+
+<p>The core of our Weather App relies on fetching data from the OpenWeatherMap API. We use the 'requests' library to send an HTTP request to the API, which responds with weather information for a specified city. We've included error handling to address scenarios like invalid city names or unavailable data.</p>
+
+<br>Creating the User Interface:<br>
+
+<p>Tkinter is excellent for building simple and intuitive user interfaces. We design our app with a text input field for entering the city name, a "Search" button to initiate the data retrieval, and labels to display the weather information, including location, temperature, description, and weather icon.</p>
+
+<br>Enhancing User Experience:<br>
+
+<p>To make the Weather App more engaging, we fetch weather icons from the API and display them alongside the weather description. The application offers a sleek, minimalistic design with a dark theme, making it easy on the eyes, especially in low-light conditions.</p>
+
+<br>Using the App:<br>
+
+<p>To use the Weather App, simply enter the name of the city you want to check, click "Search," and the app will display the latest weather data, including the city and country, temperature in Celsius, a brief description of the weather, and an associated weather icon.</p>
+
+<br>Conclusion:<br>
+
+<p>This project serves as a practical introduction to Python desktop application development and API integration. By following this guide, you can build your own Weather App or use the principles learned here to create more complex applications. Having a personalized Weather App at your fingertips is not only convenient but also a great way to sharpen your programming skills.</p>
+                      
+                    </span>
+                </p>
+                <a href="#" class="read-more">Read more</a>
+            
+      <p>Visit <a href="https://github.com/spandan-kumar/weather-app" target="_blank">GitHub</a> for more information.</p>
+       </section>
+
+            <section class="post">
+                <h2>Predicting Stock Market Trends: An Introduction to Nifty Prediction with Python</h2>
+                <p>Published on <span class="date">June 19, 2023</span> by <span class="author">Spandan Kumar</span></p>
+                <p class="content">
+                   <br><p>This Python script showcases the development of a stock market prediction model using historical Nifty (NSE Nifty 50) data. The code utilizes the yfinance library to fetch Nifty's historical stock data and employs a RandomForestClassifier from scikit-learn for making predictions.</p>
+                    <span class="full-content">
+                        <p>This Python script showcases the development of a stock market prediction model using historical Nifty (NSE Nifty 50) data. The code utilizes the yfinance library to fetch Nifty's historical stock data and employs a RandomForestClassifier from scikit-learn for making predictions.</p>
+
+<p>The process involves data preprocessing, feature engineering, and model training. Key steps include:</p>
+
+<p>Fetching historical Nifty data, including Open, High, Low, Close prices, and other attributes.<br><br>
+Data cleaning and creating a binary target variable ('Target') based on whether the stock price will rise or fall the next day.<br><br>
+Training a RandomForestClassifier using features like Close price, Volume, and technical indicators.<br><br>
+                      Backtesting the model to evaluate its performance over time.<br></p>
+<p>The model achieved an approximately 59% precision score, indicating its ability to make directional predictions in the stock market. The code also includes feature engineering by calculating rolling averages and trends to potentially enhance prediction accuracy.</p>
+
+<p>This script can serve as a starting point for more sophisticated stock market prediction models and can be extended to include additional features or different machine learning algorithms for optimization.</p>
+
+<p>For effective usage, consider updating the dataset regularly and fine-tuning the model parameters. Additionally, the model's predictions should be used cautiously in real-world trading, as stock markets are influenced by numerous external factors beyond the scope of this model.</p>
+                    </span>
+                </p>
+                <a href="#" class="read-more">Read more</a>
+            
+            <p>Visit <a href="https://colab.research.google.com/github/spandan-kumar/market-predection/blob/main/stock_market_predictor.ipynb" target="_blank">Google Collab</a> for more information.</p>
+</section>
+        </section>
+        
+      
+<section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <p>If you have any questions or feedback, please feel free to contact us using the provided contact details.</p>
+    <div class="icons icons-container">
+        <a href="https://www.linkedin.com/in/spandan-kumar-a45a511a5/" target="_blank" class="icon-link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/spandan-kumar" target="_blank" class="icon-link">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://codepen.io/spandan-kumar" target="_blank" class="icon-link">
+            <i class="fab fa-codepen"></i>
+        </a>
+        <a href="mailto:spandankumar9@gmail.com" class="icon-link">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+</section>
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Gizmo Gazette</p>
+    </footer>
+<script src= "script.js"></script>
+</body>
+</html>
