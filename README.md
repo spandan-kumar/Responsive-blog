@@ -8,7 +8,7 @@ Responsive design for desktop and mobile.
 Easy management of blog posts.
 Dark mode toggle.
 Usage
-Clone the repository: git clone https://github.com/yourusername/blog-website.git
+Clone the repository: git clone https://github.com/spandan-kumar/Responsive-blog/tree/main
 
 Open index.html in your web browser.
 
