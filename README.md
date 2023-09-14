@@ -1,7 +1,7 @@
 # Responsive-blog
 minimal effort, doesn't look good.
 Basic Responsive Blog Website 
-This is a simple responsive blog website template built with HTML, CSS, and JavaScript. It features a dark mode option for improved nighttime readability.
+This is a simple responsive blog website template built with HTML, CSS, and JavaScript. It features a dark mode option for improved nighttime readability. <br>
 Preview: https://codepen.io/spandan-kumar/pen/poqwyXV
 
 Features
